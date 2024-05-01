@@ -81,7 +81,6 @@ const Index = () => {
               <StatWidget title="Power" main="300 Watts" sub="POE" />
             </Grid>
             <SettingsSection />
-            <PortSettings />
           </Container>
         )}
       </Box>
@@ -106,19 +105,6 @@ const SettingsSection = () => (
       <SettingItem label="Node Name" type="text" />
       <SettingItem label="Node ID" type="number" />
       <SettingItem label="Illumination" type="select" options={["Bright", "Normal", "Low", "Off"]} />
-    </Grid>
-  </Box>
-);
-const PortSettings = () => (
-  <Box bg="gray.700" p={4} borderRadius="md" mt={6}>
-    <Heading size="md" mb={4}>
-      Port Settings
-    </Heading>
-    <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-      <SettingItem label="Ethernet Port" type="text" />
-      {Array.from({ length: 4 }).map((_, index) => (
-        <SettingItem key={index} label={`DMX Port ${index + 1}`} type="text" />
-      ))}
     </Grid>
   </Box>
 );
