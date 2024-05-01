@@ -114,18 +114,20 @@ const PortSettings = () => (
     <Heading size="md" mb={4}>
       Port Settings
     </Heading>
-    <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-      <SettingItem label="Ethernet Port" type="text" />
+    <Grid templateColumns="repeat(1, 1fr)" gap={6}>
+      <SettingItem label="Ethernet Port" type="text" color="blue.500" />
       {Array.from({ length: 4 }).map((_, index) => (
-        <SettingItem key={index} label={`DMX Port ${index + 1}`} type="text" />
+        <SettingItem key={index} label={`DMX Port ${index + 1}`} type="text" color="purple.500" />
       ))}
     </Grid>
   </Box>
 );
 
-const SettingItem = ({ label, type, options }) => (
+const SettingItem = ({ label, type, color, options }) => (
   <Box>
-    <Text mb={2}>{label}</Text>
+    <Text mb={2} color={color}>
+      {label}
+    </Text>
     {type === "select" ? (
       <Input as="select" color="white">
         {options.map((option) => (
