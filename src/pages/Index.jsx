@@ -98,6 +98,9 @@ const StatWidget = ({ title, main, sub }) => (
 
 const SettingsSection = () => (
   <Box bg="gray.700" p={4} borderRadius="md" mt={6}>
+    <Heading size="md" mb={4}>
+      Node Settings
+    </Heading>
     <Grid templateColumns="repeat(2, 1fr)" gap={6}>
       <SettingItem label="Node Name" type="text" />
       <SettingItem label="Node ID" type="number" />
