@@ -123,7 +123,7 @@ const PortSettings = () => (
         <Box w="full" bg="gray.600" p={4} borderRadius="md" position="relative">
           <Box h="10px" bg={port.color} borderRadius="md" mb={2} />
           <Text fontWeight="bold">{port.name}</Text>
-          <Text position="absolute" top="0" right="0" fontSize="sm">
+          <Text position="absolute" top="0" right="0" fontSize="sm" fontWeight="normal">
             {port.label}
           </Text>
         </Box>
