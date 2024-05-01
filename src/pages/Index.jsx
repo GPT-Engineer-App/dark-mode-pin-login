@@ -110,7 +110,7 @@ const SettingItem = ({ label, type, options }) => (
   <Box>
     <Text mb={2}>{label}</Text>
     {type === "select" ? (
-      <Input as="select">
+      <Input as="select" color="white">
         {options.map((option) => (
           <option key={option} value={option}>
             {option}
