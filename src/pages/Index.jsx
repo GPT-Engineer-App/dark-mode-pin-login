@@ -120,10 +120,12 @@ const PortSettings = () => (
         { name: "D3", color: "#32CD32" },
         { name: "D4", color: "#DA70D6" },
       ].map((port) => (
-        <Box w="full" bg="gray.600" p={4} borderRadius="md" display="flex" justifyContent="space-between">
+        <Box w="full" bg="gray.600" p={4} borderRadius="md" position="relative">
           <Box h="10px" bg={port.color} borderRadius="md" mb={2} />
           <Text fontWeight="bold">{port.name}</Text>
-          <Text>{port.name === "E1" ? "Ethernet 1" : port.name === "D1" ? "DMX 1" : port.name === "D2" ? "DMX 2" : port.name === "D3" ? "DMX 3" : "DMX 4"}</Text>
+          <Text position="absolute" top="0" right="0" fontSize="sm">
+            {port.name === "E1" ? "Ethernet 1" : `DMX ${port.name[1]}`}
+          </Text>
         </Box>
       ))}
     </HStack>
