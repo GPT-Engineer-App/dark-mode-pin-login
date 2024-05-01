@@ -117,11 +117,11 @@ const PortSettings = () => (
     </Heading>
     <VStack spacing={4}>
       {[
-        { name: "Ethernet", color: "#FFD700" },
-        { name: "DMX 1", color: "#FF6347" },
-        { name: "DMX 2", color: "#4682B4" },
-        { name: "DMX 3", color: "#32CD32" },
-        { name: "DMX 4", color: "#DA70D6" },
+        { name: "E1", color: "#FFD700" },
+        { name: "D1", color: "#FF6347" },
+        { name: "D2", color: "#4682B4" },
+        { name: "D3", color: "#32CD32" },
+        { name: "D4", color: "#DA70D6" },
       ].map((port) => (
         <Box w="full" bg="gray.600" p={4} borderRadius="md">
           <Box h="10px" bg={port.color} borderRadius="md" mb={2} />
