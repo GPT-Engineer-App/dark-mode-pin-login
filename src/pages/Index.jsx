@@ -114,11 +114,11 @@ const PortSettings = () => (
   <Box bg="gray.700" p={4} borderRadius="md" mt={6}>
     <HStack spacing={4}>
       {[
-        { name: "E1", color: "#FFD700", label: "Ethernet 1" },
-        { name: "D1", color: "#FF6347", label: "DMX 1" },
-        { name: "D2", color: "#4682B4", label: "DMX 2" },
-        { name: "D3", color: "#32CD32", label: "DMX 3" },
-        { name: "D4", color: "#DA70D6", label: "DMX 4" },
+        { name: "E1", color: "#FFD700" },
+        { name: "D1", color: "#FF6347" },
+        { name: "D2", color: "#4682B4" },
+        { name: "D3", color: "#32CD32" },
+        { name: "D4", color: "#DA70D6" },
       ].map((port) => (
         <Box w="full" bg="gray.600" p={4} borderRadius="md" position="relative">
           <Box h="10px" bg={port.color} borderRadius="md" mb={2} />
