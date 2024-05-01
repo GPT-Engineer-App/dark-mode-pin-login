@@ -36,7 +36,7 @@ const Index = () => {
       <Box bg="gray.800" minH="100vh" color="white">
         {!isLoggedIn ? (
           <Container centerContent>
-            <VStack spacing={2} py={20}>
+            <VStack spacing={4} py={20}>
               <Heading as="h1">FlexNode 4</Heading>
               <Text>Name: Something</Text>
               <Text>ID: 1</Text>
