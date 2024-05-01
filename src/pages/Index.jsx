@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, ChakraProvider, Container, Flex, Grid, GridItem, Heading, Input, Stack, Text, theme, VStack } from "@chakra-ui/react";
+import { Box, Button, ChakraProvider, Container, Flex, Grid, GridItem, Heading, HStack, Input, Stack, Text, theme, VStack } from "@chakra-ui/react";
 import { FaUpload, FaDownload, FaPowerOff, FaSignOutAlt } from "react-icons/fa";
 
 const Index = () => {
@@ -115,7 +115,7 @@ const PortSettings = () => (
     <Heading size="md" mb={4}>
       Port Settings
     </Heading>
-    <VStack spacing={4}>
+    <HStack spacing={4}>
       {[
         { name: "E1", color: "#FFD700" },
         { name: "D1", color: "#FF6347" },
@@ -128,7 +128,7 @@ const PortSettings = () => (
           <Text fontWeight="bold">{port.name}</Text>
         </Box>
       ))}
-    </VStack>
+    </HStack>
   </Box>
 );
 
