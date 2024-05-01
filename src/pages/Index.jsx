@@ -112,9 +112,6 @@ const SettingsSection = () => (
 
 const PortSettings = () => (
   <Box bg="gray.700" p={4} borderRadius="md" mt={6}>
-    <Heading size="md" mb={4}>
-      Port Settings
-    </Heading>
     <HStack spacing={4}>
       {[
         { name: "E1", color: "#FFD700" },
